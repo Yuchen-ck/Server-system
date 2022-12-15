@@ -29,7 +29,7 @@ def FedAVG(client_num,fixKey):
     comms_round = 1
     epochs_ = 10
 
-    path = './train_data/dataset.csv'
+    path = 'dataset.csv'
     X, Y = load(path)
 
     x_train,x_test, y_train, y_test = train_test_split(X, Y,test_size=0.15, random_state=42)
